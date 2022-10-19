@@ -1,0 +1,64 @@
+Uma loja está automatizando seus processos de negócios e irá desenvolver um sistema,
+designado SisLoja. Em uma fase inicial, irá implantar os módulos do sistema SisLoja
+para:
+1) gerenciar o estoque (GerEstoque)
+2) gerenciar clientes (GerClientes)
+3) gerenciar o fluxo de caixa (GerCaixa)
+
+
+Módulo GerEstoque
+O módulo GerEstoque deve permitir que o usuário possa incluir ou excluir itens no
+estoque, selecionando uma das duas opções.
+Em um acesso para inclusão, o usuário poderá incluir vários itens ao estoque,
+informando quantos itens serão incluídos. Para incluir cada item no estoque o usuário
+deverá digitar: o código do item (cod_item) – um número inteiro; uma descrição do
+item (desc_item); e o seu valor, em reais (valor_item). 
+Após cadastrados todos os itens, o sistema apresentará a média dos valores dos itens
+cadastrados; e o código do item de maior valor com o seu respectivo valor.
+Em um acesso para exclusão, o usuário só poderá excluir cada componente item por
+item, digitando o código do item a ser excluído. Após o usuário digitar o código do
+item a ser excluído o sistema deverá emitir uma mensagem: “TEM CERTEZA QUE
+DESEJA EXCLUIR O ITEM?”.
+Se o usuário digitar “não”, a execução será finalizada. Caso o usuário digite “sim”, o
+sistema deverá verificar se o código é válido (códigos válidos possuem a soma dos
+dígitos superior a 20). Se o código for inválido, o sistema deverá apresentar uma
+mensagem “CÓDIGO INVÁLIDO” e encerrar a operação; se o código for válido e
+houver saldo em estoque, o sistema deverá excluir o item solicitado e apresentar uma
+mensagem “OPERAÇÃO REALIZADA COM SUCESSO” e apresentar uma
+mensagem perguntando se o usuário deseja excluir um novo item.
+Ao término da exclusão de todos os itens, o sistema deverá apresentar uma relação
+dos itens excluídos e o respectivo saldo em estoque.
+
+
+
+O módulo GerClientes 
+deve permitir que o usuário possa cadastrar vários clientes,
+digitando o CPF do cliente (cpf) e a renda (renda_cliente). A operação poderá ser
+interrompida quando o usuário digitar um CPF de cliente igual a 0. O sistema deverá
+verificar se o CPF do cliente é válido.
+Após cadastrar os clientes, o módulo deverá apresentar uma mensagem
+“OPERAÇÃO REALIZADA COM SUCESSO”, seguida de uma mensagem com o
+número de clientes cadastrados e com o percentual de clientes com renda superior a R$
+10.000,00; entre R$ 5.000,00 e R$ 10.000,00; e inferior a R$ 5.000,00. 
+
+
+
+
+
+O módulo GerCaixa 
+deve permitir que o usuário registre a movimentação financeira
+de um determinado dia. O módulo deve permitir que o usuário digite no início do
+lançamento dos dados: a data (data), o saldo inicial do caixa no dia (saldo_inicial) e o
+número total (N) de vendas realizadas.
+O lançamento dos dados de vendas pelo usuário no sistema GerCaixa deve ser realizado
+pelo código de cada cliente. Um cliente pode realizar várias compras em um dia. Para
+cada cliente, o usuário deve lançar o código do cliente (cpf), seguido pelo número de
+compras que ele fez no dia.
+Em cada venda realizada ao cliente, o usuário deverá lançar o código do item
+(cod_item), a quantidade de itens (quant_item) e o valor unitário, em reais, (valor_un).
+O sistema deverá calcular o respectivo valor total (tot_venda) da venda.
+O sistema deverá calcular e apresentar relatório parcial com o valor total das vendas
+por cliente (tot_cliente). 
+Após o lançamento de todas as vendas, o sistema deverá apresentar um relatório com:
+a data da movimentação, o saldo final do caixa, o valor médio das vendas no dia, o total
+de itens vendidos e o código do cliente que mais consumiu
