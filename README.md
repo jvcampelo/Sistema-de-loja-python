@@ -48,7 +48,7 @@ O módulo GerCaixa permite ao usuário registrar a movimentação financeira di�
 
 ## Desenvolvimento
 
-Este projeto foi desenvolvido como parte do curso na faculdade.
+Este projeto foi desenvolvido como parte da disciplina de Programação Estruturada no curso de Ciência de dados e inteligencia artificial no 1º periodo.
 
 ---
 Espero que esta documentação seja útil para o seu projeto! Se precisar de mais alguma coisa, não hesite em perguntar.
